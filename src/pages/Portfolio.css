@@ -1,23 +1,32 @@
 .portfolio-page {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .preview-btn {
-    padding: 12px 20px;
-    background-color: #0077cc;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-bottom: 25px;
-    font-size: 16px;
-  }
-  
-  .preview-btn:hover {
-    background-color: #005fa3;
-  }
-  
-  .projects-list {
-    margin-top: 20px;
-  }
+  padding: 20px;
+  text-align: center;
+}
+
+.preview-btn {
+  padding: 12px 20px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.preview-btn:hover {
+  background-color: #005fa3;
+}
+
+.search-input {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.projects-list {
+  margin-top: 20px;
+}

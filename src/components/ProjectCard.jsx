@@ -1,19 +1,16 @@
 import './ProjectCard.css'
 
-function ProjectCard(props) {
+function ProjectCard({ project, openPopup }) {
   return (
-    <div className="project-card">
-      <img src={props.screenshot} alt={props.name} className="project-image" />
+    <div className="project-card" onClick={() => openPopup(project)}>
+      <img src={project.screenshot} alt={project.name} className="project-image" />
 
-      <h2>{props.name}</h2>
+      <h2>{project.name}</h2>
 
-      <p><strong>GitHub Repo:</strong> <a href={props.githubRepo} target="_blank" rel="noreferrer">View Repo</a></p>
-      <p><strong>Tech Used:</strong> {props.techUsed}</p>
-      <p><strong>Short Write-up:</strong> {props.writeUp}</p>
-      <p><strong>What the project does:</strong> {props.whatItDoes}</p>
-      <p><strong>What I learned:</strong> {props.whatILearned}</p>
-      <p><strong>My role:</strong> {props.role}</p>
-      <p><strong>Challenges solved:</strong> {props.challenges}</p>
+      <p><strong>Tech Used:</strong> {project.techUsed}</p>
+      <p>{project.writeUp}</p>
+
+      <button className="details-btn">View Details</button>
     </div>
   )
 }
